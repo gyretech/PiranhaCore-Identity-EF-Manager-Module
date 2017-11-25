@@ -3,25 +3,20 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:8358/",
+      "applicationUrl": "http://localhost:62454/",
       "sslPort": 0
     }
   },
   "profiles": {
+    "Piranha.AspNetCore.Identity.EF.Manager": {
+      "commandName": "Project"
+    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    },
-    "Piranha.AspNetCore.Identity.EF.Manager": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:8359/"
     }
   }
 }
