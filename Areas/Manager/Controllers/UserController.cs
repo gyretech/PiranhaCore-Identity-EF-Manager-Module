@@ -47,7 +47,7 @@ namespace Piranha.AspNetCore.Identity.EF.Manager.Area.Manager.Controllers
             if (!string.IsNullOrEmpty(id))
                 return View(await UserEditModel.GetById(userManager, id));
 
-            return View(await UserEditModel.Create(userManager));
+            return View(UserEditModel.Create(userManager));
         }
 
         /// <summary>

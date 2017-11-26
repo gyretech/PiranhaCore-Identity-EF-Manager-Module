@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Security.Claims;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Piranha.AspNetCore.Identity.EF.Manager.Areas.Manager.Models
 {
@@ -72,14 +70,14 @@ namespace Piranha.AspNetCore.Identity.EF.Manager.Areas.Manager.Models
 
             throw new KeyNotFoundException($"No page found with the id '{id}'");
         }
-        
-        public static async Task<UserEditModel> Create(UserManager<IdentityAppUser> userManager)
+
+        public static UserEditModel Create(UserManager<IdentityAppUser> userManager)
         {
             var model = new UserEditModel();
 
             model.Id = null;
             model.ChangePassword = true;
-            
+
             return model;
         }
 
